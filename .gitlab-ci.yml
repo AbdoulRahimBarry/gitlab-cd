@@ -18,7 +18,7 @@ stages:
     - echo $ANSIBLE_VAULT_PASSWORD > vault.key
     - echo "$DEPLOYMENT_SSH_KEY" > id_rsa
     - chmod 600 id_rsa
-    - ansible-galaxy install -r roles/requirements.yml
+    - ansible-galaxy install -r role/requirements.yml
   after_script:
     - rm vault.key id_rsa
   tags:
