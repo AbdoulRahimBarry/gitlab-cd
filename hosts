@@ -1,5 +1,5 @@
 [prod]
-52.91.125.61
+52.91.125.61 ansible_user=centos ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
 [build]
-100.26.223.162
+100.26.223.162 ansible_user=centos ansible_ssh_common_args='-o StrictHostKeyChecking=no'
